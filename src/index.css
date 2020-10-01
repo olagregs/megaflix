@@ -8,3 +8,53 @@ body {
   color: #ffffff;
   background-color: #e74c3c;
 }
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie {
+  margin: 1rem;
+  position: relative;
+  width: 220px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px #000000;
+  background-color: #c0392b;
+  overflow: hidden;
+}
+
+.movie img {
+  max-width: 100%;
+}
+
+.movie-info {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+.movie-over {
+  padding: 1rem;
+  position: absolute;
+  max-height: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  color: #c0392b;
+  transform: translateY(100%);
+  transition: linear 0.3s;
+  overflow: auto;
+}
+
+.movie:hover .movie-over {
+  transform: translateY(0);
+}
