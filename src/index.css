@@ -9,6 +9,29 @@ body {
   background-color: #e74c3c;
 }
 
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #c0392b;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 40px;
+  color: #dddddd;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+}
+
 .movie-container {
   display: flex;
   flex-wrap: wrap;
@@ -19,7 +42,7 @@ body {
 .movie {
   margin: 1rem;
   position: relative;
-  width: 220px;
+  width: 230px;
   border-radius: 5px;
   box-shadow: 1px 1px 3px 1px #000000;
   background-color: #c0392b;
@@ -28,6 +51,9 @@ body {
 
 .movie img {
   max-width: 100%;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .movie-info {
@@ -57,4 +83,23 @@ body {
 
 .movie:hover .movie-over {
   transform: translateY(0);
+}
+
+.tag {
+  background-color: #e74c3c;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.tag.green {
+  color: #009432;
+}
+
+.tag.orange {
+  color: #FFC312;
+}
+
+.tag.red {
+  color: #EA2027;
 }
